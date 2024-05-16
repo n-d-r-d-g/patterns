@@ -34,6 +34,8 @@ const router = createBrowserRouter(routes);
 
 You may have noticed that in the code block above, each object in the `routes` array contains an `errorElement` property with the same value, i.e. `<ErrorBoundary />`. As the app grows, more routes might be added and every time developers need to add a route, they will need to specify this property. This goes against the DRY principle, hence making the code less maintainable.
 
+## New code (using classes)
+
 Using classes along with TypeScript basically solves this issue:
 
 src/classes/Route.ts:
