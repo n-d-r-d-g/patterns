@@ -4,7 +4,7 @@ I rarely use classes in front-end JS/TS code and I don't see other developers ma
 
 So, here's a use case I came across where classes can help make DX better in React.
 
-## Original code (not using classes)
+## Original code (without classes)
 
 When using [React Router](https://reactrouter.com), you need to specify your app's routes with `createBrowserRouter`. Let's take an example where the app currently contains 3 routes, namely `/`, `/about` and `/contact`.
 
@@ -34,7 +34,7 @@ const router = createBrowserRouter(routes);
 
 You may have noticed that in the code block above, each object in the `routes` array contains an `errorElement` property with the same value, i.e. `<ErrorBoundary />`. As the app grows, more routes might be added and every time developers need to add a route, they will need to specify this property. This goes against the DRY principle, hence making the code less maintainable.
 
-## New code (using classes)
+## New code (with classes)
 
 Using classes along with TypeScript basically solves this issue:
 
