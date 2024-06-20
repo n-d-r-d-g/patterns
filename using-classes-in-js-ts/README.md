@@ -8,7 +8,7 @@ So, here's a use case I came across where classes can help make DX better in Rea
 
 When using [React Router](https://reactrouter.com), you need to specify your app's routes with `createBrowserRouter`. Let's take an example where the app currently contains 3 routes, namely `/`, `/about` and `/contact`.
 
-src/main.jsx:
+src/main.tsx:
 
 ```tsx
 const routes = [
