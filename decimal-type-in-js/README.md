@@ -1,4 +1,4 @@
-# Using the Decimal type in JavaScript
+# Decimal type in JavaScript
 
 Some programming languages provide a built-in Decimal type to represent non-repeating decimal fractions like 0.3 and -1.17 without rounding. This means that developers can perform arithmetic operations accurately on these fractions.
 

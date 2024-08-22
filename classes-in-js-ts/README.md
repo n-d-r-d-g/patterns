@@ -1,4 +1,4 @@
-# Using classes in JavaScript/TypeScript
+# Classes in JavaScript/TypeScript
 
 I rarely use classes in front-end JS/TS code and I don't see other developers make use of this pattern very often.
 

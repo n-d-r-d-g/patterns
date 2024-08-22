@@ -1,4 +1,4 @@
-# Using object `getters` in JavaScript
+# Object `getters` in JavaScript
 
 An object getter can be used to define a `readonly` property on an object. It has another nice caveat to it: it can access other properties on the same object.
 

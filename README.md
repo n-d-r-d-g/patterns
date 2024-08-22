@@ -4,12 +4,12 @@ Development patterns that can be used to improve DX.
 
 ## Table of contents
 
-- [Nesting links in HTML](nesting-links-in-html/)
-- [Using classes in JavaScript/TypeScript](using-classes-in-js-ts/)
-- [Using Context & a custom hook in React](using-context-hook-in-react/)
-- [Using the Decimal type in JavaScript](using-decimal-type-in-js/)
-- [Using object getters in JavaScript](using-object-getters-in-js/)
+- [Classes in JavaScript/TypeScript](classes-in-js-ts/)
+- [Context & a custom hook in React](context-hook-in-react/)
+- [Decimal type in JavaScript](decimal-type-in-js/)
 - [Destructuring Arrays like Objects in JavaScript](destructuring-arrays-like-objects-in-js/)
+- [Nesting links in HTML](nesting-links-in-html/)
+- [Object getters in JavaScript](object-getters-in-js/)
 
 ## Contribution
 

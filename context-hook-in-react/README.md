@@ -1,4 +1,4 @@
-# Using Context & a custom hook in React
+# Context & a custom hook in React
 
 This pattern show how to share and update state using React Context via a custom provider and hook.
 
