@@ -9,7 +9,7 @@ Fortunately, there's a library called [decimal.js](https://mikemcl.github.io/dec
 ## Original code (without Decimal type)
 
 ```js
-console.log(0.1 + 0.2); // outputs 0.30000000000000004
+console.log(0.1 + 0.2); // 0.30000000000000004
 ```
 
 ## New code (with Decimal type)
@@ -18,7 +18,7 @@ console.log(0.1 + 0.2); // outputs 0.30000000000000004
 let decimalSum = Decimal.sum(0.1, 0.2);
 let numericSum = decimalSum.toNumber();
 
-console.log(numericSum); // outputs 0.3
+console.log(numericSum); // 0.3
 ```
 
 When dealing with any numeric calculation in JavaScript, especially money-related, it's safer to use decimal.js not to get any unexpected result.
