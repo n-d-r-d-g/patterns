@@ -9,6 +9,7 @@ Development patterns that can be used to improve DX.
 - [Using Context & a custom hook in React](using-context-hook-in-react/)
 - [Using the Decimal type in JavaScript](using-decimal-type-in-js/)
 - [Using object getters in JavaScript](using-object-getters-in-js/)
+- [Destructuring Arrays like Objects in JavaScript](destructuring-arrays-like-objects-in-js/)
 
 ## Contribution
 
