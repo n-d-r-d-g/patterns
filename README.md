@@ -10,6 +10,7 @@ Development patterns that can be used to improve DX.
 - [Destructuring Arrays like Objects in JavaScript](destructuring-arrays-like-objects-in-js/)
 - [Nesting links in HTML](nesting-links-in-html/)
 - [Object getters in JavaScript](object-getters-in-js/)
+- [Range function in JavaScript](range-function-in-js/)
 
 ## Contribution
 
