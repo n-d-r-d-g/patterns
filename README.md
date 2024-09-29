@@ -5,7 +5,7 @@ Development patterns that can be used to improve DX.
 ## Table of contents
 
 - [Classes in JavaScript/TypeScript](classes-in-js-ts/)
-- [Concatenating compound fields in JavaScript](concatenating-compound-fields-in-javascript)
+- [Concatenating compound fields in JavaScript](concatenating-compound-fields-in-js/)
 - [Context & a custom hook in React](context-hook-in-react/)
 - [Decimal type in JavaScript](decimal-type-in-js/)
 - [Destructuring Arrays like Objects in JavaScript](destructuring-arrays-like-objects-in-js/)
