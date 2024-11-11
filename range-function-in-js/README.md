@@ -6,15 +6,14 @@ There's no native function in JavaScript to generate a range of values. The code
 function range(start, end, step = 1) {
   return {
     [Symbol.iterator]() {
-      return this;
-    },
-    next() {
-      const done = start > end;
-      const value = done ? end : start;
+      next() {
+        const done = start > end;
+        const value = done ? end : start;
 
-      start += step;
+        start += step;
 
-      return { done, value };
+        return { done, value };
+      }
     },
   };
 }
