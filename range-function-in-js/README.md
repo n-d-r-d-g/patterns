@@ -5,7 +5,7 @@ There's no native function in JavaScript to generate a range of values. The code
 ```js
 function range(start, end, step = 1) {
   return {
-    [Symbol.iterator]() {
+    [Symbol.iterator]: () => ({
       next() {
         const done = start > end;
         const value = done ? end : start;
@@ -13,8 +13,8 @@ function range(start, end, step = 1) {
         start += step;
 
         return { done, value };
-      }
-    },
+      },
+    }),
   };
 }
 ```
