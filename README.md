@@ -8,7 +8,7 @@ Development patterns that can be used to improve DX.
 - [Concatenating compound fields in JavaScript](concatenating-compound-fields-in-js/)
 - [Context & a custom hook in React](context-hook-in-react/)
 - [Decimal type in JavaScript](decimal-type-in-js/)
-- [Destructuring Arrays like Objects in JavaScript](destructuring-arrays-like-objects-in-js/)
+- [Destructuring arrays by index in JavaScript](destructuring-arrays-by-index-in-js/)
 - [Inline CSS variables in Tailwind CSS](inline-css-variables-in-tailwind-css)
 - [Nesting links in HTML](nesting-links-in-html/)
 - [Object getters in JavaScript](object-getters-in-js/)

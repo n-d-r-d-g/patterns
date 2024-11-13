@@ -1,4 +1,4 @@
-# Destructuring Arrays like Objects in JavaScript
+# Destructuring arrays by index in JavaScript
 
 Destructuring is often used as a shorthand to retrieve specific elements from arrays and objects.
 
