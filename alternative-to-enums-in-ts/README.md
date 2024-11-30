@@ -2,7 +2,7 @@
 
 **Enums** in TypeScript are often used to define a set of named constants [(TypeScriptLang Handbook, 2024)](https://www.typescriptlang.org/docs/handbook/enums.html).
 
-> [! NOTE]
+> [!NOTE]
 > JavaScript does not have a native implementation of `Enums` like C# or other languages, as `Objects` already exist.
 
 While useful in certain scenarios, enums have notable drawbacks:
@@ -58,8 +58,9 @@ type TStatus = typeof Status[keyof typeof Status];
 * Readonly safety: `as const` ensures the values are immutable.
 * Interoperability: Works seamlessly with libraries and patterns requiring plain objects.
 
-> [! TIP]
+> [!TIP]
 > When using `as const` on an object, the values are set to **readonly**.
+![as-const-example](https://github.com/user-attachments/assets/95756a1c-0d7a-4429-b053-950b39316440)
 
 ### References
 
