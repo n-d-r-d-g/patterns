@@ -13,7 +13,7 @@ Even [Anders Hejlsberg](https://www.youtube.com/watch?v=vBJF0cJ_3G0&t=1012s), th
 
 A cleaner alternative leverages `as const` and `typeof` for better performance and flexibility.
 
-## Original code (using `enum` )
+## Original code (using `enum`)
 
 ```typescript
 enum Status {
