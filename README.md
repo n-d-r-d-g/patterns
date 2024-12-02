@@ -4,6 +4,7 @@ Development patterns that can be used to improve DX.
 
 ## Table of contents
 
+- [Alternative to Enums in TypeScript](alternative-to-enums-in-ts/)
 - [Classes in JavaScript/TypeScript](classes-in-js-ts/)
 - [Concatenating compound fields in JavaScript](concatenating-compound-fields-in-js/)
 - [Context & a custom hook in React](context-hook-in-react/)
