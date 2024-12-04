@@ -4,6 +4,7 @@ Development patterns that can be used to improve DX.
 
 ## Table of contents
 
+- [Aligning ordered list numbers in CSS](aligning-ordered-list-numbers-in-css/)
 - [Alternative to Enums in TypeScript](alternative-to-enums-in-ts/)
 - [Classes in JavaScript/TypeScript](classes-in-js-ts/)
 - [Concatenating compound fields in JavaScript](concatenating-compound-fields-in-js/)
