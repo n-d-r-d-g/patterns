@@ -2,7 +2,7 @@
 
 This pattern shows how to share and update state using React Context via a custom provider and hook.
 
-src/AppContext.tsx:
+**`src/AppContext.tsx`**:
 
 This file exports the provider, i.e. AppProvider, and the custom hook, i.e. useApp.
 
@@ -42,7 +42,7 @@ export function useApp() {
 }
 ```
 
-src/\_app.tsx:
+**`src/\_app.tsx`**:
 
 ```tsx
 import { AppProvider } from "./AppContext";
@@ -57,7 +57,7 @@ function App() {
 }
 ```
 
-src/Child.tsx:
+**`src/Child.tsx`**:
 
 ```tsx
 import { useApp } from "./AppContext";
