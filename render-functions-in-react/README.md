@@ -76,7 +76,7 @@ export function Tooltip<T extends HTMLElement>({
 When using `Tooltip`, we should specify the type argument as the type of the element we want to check for truncation.
 
 ```tsx
-import { Tooltip } from './components';
+import { Tooltip } from './components/Tooltip';
 
 function App() {
   const title = 'This text can be very long (i.e. it will be truncated) or short enough not to be truncated.';
