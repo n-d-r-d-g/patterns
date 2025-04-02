@@ -42,7 +42,7 @@ export function useApp() {
 }
 ```
 
-**`src/\_app.tsx`**:
+**`src/_app.tsx`**:
 
 ```tsx
 import { AppProvider } from "./AppContext";

@@ -71,7 +71,7 @@ export function Tooltip<T extends HTMLElement>({
 }
 ```
 
-**`src/\_app.tsx`**:
+**`src/_app.tsx`**:
 
 When using `Tooltip`, we should specify the type argument as the type of the element we want to check for truncation.
 
