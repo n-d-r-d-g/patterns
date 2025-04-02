@@ -15,6 +15,7 @@ Development patterns that can be used to improve DX.
 - [Nesting links in HTML](nesting-links-in-html/)
 - [Object getters in JavaScript](object-getters-in-js/)
 - [Range function in JavaScript](range-function-in-js/)
+- [Render functions in React](render-functions-in-react/)
 - [ReturnType in TypeScript](return-type-in-ts/)
 
 ## Contribution
