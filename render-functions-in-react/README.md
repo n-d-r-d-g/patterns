@@ -2,9 +2,27 @@
 
 This pattern can be used whenever a child component needs to expose data to its parent component.
 
-In the following example, a custom `Tooltip` component is created to wrap text. The `Tooltip` should be displayed only if the text is truncated.
+**`Child component`**:
 
-The component should be able to wrap nested elements and target the specified one to check whether it's truncated or not.
+```jsx
+function Child({ children }) {
+  const ref = useRef();
+
+  return children(ref);
+}
+```
+
+**`Parent component`**:
+
+```jsx
+function Parent() {
+  return <Child>{(ref) => <span ref={ref}>Hello world!</span>}</Child>;
+}
+```
+
+In the following example, a custom `Tooltip` component is created and should be displayed only if the text it wraps is truncated.
+
+The component should be able to wrap nested elements and target the specified one to check whether it's truncated or not, reason for which a `ref` is needed.
 
 **`src/hooks/useTruncatedText.tsx`**:
 
@@ -15,11 +33,11 @@ This hook accepts a `ref` to the element whose text needs to be checked for trun
 A generic type that extends `HTMLElement` limits the `ref` type to only HTML elements.
 
 ```tsx
-import { JSXElementConstructor, ReactElement, RefObject, useLayoutEffect, useState } from 'react';
+import { ReactElement, RefObject, useLayoutEffect, useState } from "react";
 
 export const useTruncatedText = <T extends HTMLElement>(
   ref: RefObject<T>,
-  text?: TooltipProps['title']
+  text?: TooltipProps["title"]
 ) => {
   const [isTextTruncated, setIsTextTruncated] = useState(false);
 
@@ -31,7 +49,6 @@ export const useTruncatedText = <T extends HTMLElement>(
 
   return { isTextTruncated };
 };
-
 ```
 
 **`src/components/Tooltip.tsx`**:
@@ -43,11 +60,11 @@ The `ref` is created in this component to avoid having to create one in every si
 This component also accepts a generic type that extends `HTMLElement`, to ensure type safety.
 
 ```tsx
-import { useRef } from 'react';
-import { Tooltip as BaseTooltip, TooltipProps } from '@mui/material';
-import { useTruncatedText } from '../hooks/useTruncatedText';
+import { useRef } from "react";
+import { Tooltip as BaseTooltip, TooltipProps } from "@mui/material";
+import { useTruncatedText } from "../hooks/useTruncatedText";
 
-type Props<T extends HTMLElement> = Omit<TooltipProps, 'children'> & {
+type Props<T extends HTMLElement> = Omit<TooltipProps, "children"> & {
   children: (ref: RefObject<T>) => ReactElement;
 };
 
@@ -76,15 +93,16 @@ export function Tooltip<T extends HTMLElement>({
 When using `Tooltip`, we should specify the type argument as the type of the element we want to check for truncation.
 
 ```tsx
-import { Tooltip } from './components/Tooltip';
+import { Tooltip } from "./components/Tooltip";
 
 function App() {
-  const title = 'This text can be very long (i.e. it will be truncated) or short enough not to be truncated.';
+  const title =
+    "This text can be very long (i.e. it will be truncated) or short enough not to be truncated.";
 
   return (
     <main>
       <Tooltip<HTMLSpanElement> title={title}>
-        {ref => (
+        {(ref) => (
           <h1>
             <span>Icon</span>
             <span ref={ref}>{title}</span>
@@ -92,7 +110,7 @@ function App() {
         )}
       </Tooltip>
     </main>
-  )
+  );
 }
 ```
 
@@ -103,9 +121,7 @@ We could have only wrapped the `span` which has a `ref`:
   <h1>
     <span>Icon</span>
     <Tooltip<HTMLSpanElement> title={title}>
-      {ref => (
-        <span ref={ref}>{title}</span>
-      )}
+      {(ref) => <span ref={ref}>{title}</span>}
     </Tooltip>
   </h1>
 </main>
