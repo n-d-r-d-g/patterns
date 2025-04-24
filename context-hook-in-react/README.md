@@ -36,7 +36,7 @@ export function AppProvider({ children }: PropsWithChildren) {
 export function useApp() {
   const ctx = useContext(AppContext);
 
-  if (!ctx) throw new Error("useApp must be used within an AppProvider!");
+  if (!ctx) throw new Error(`${useApp.name} must be used within an ${AppProvider.name}!`);
 
   return ctx!;
 }
